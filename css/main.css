@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*******************Font Styles*************/
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url("../assets/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../assets/fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Medium";
+    src: url("../assets/fonts/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("../assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RussoOne-Regular";
+    src: url("../assets/fonts/RussoOne-Regular.ttf") format("truetype");
+}
+
+body{
+    background: #2D2D2D;
+    max-width: 1919px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 322px;
+    padding-right: 422px;
+}
+
+.navbar__brand{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__brand a{
+    color: #2194FF;
+    font-family: OpenSans-Regular,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    height: 16px;
+}
+
+.line{
+    margin-top: 22px;
+    width: 1px;
+    height: 33px;
+    background: #FFF;
+    margin-left: 24px;
+    margin-right: 21px;
+}
+
+.navbar__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navbar__contact a:nth-child(1){
+    color: #F1F1F1;
+    font-family:  RussoOne-Regular,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar__contact a:nth-child(2){
+    color: #2194FF;
+    font-family: OpenSans-SemiBold,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.header__content{
+    padding: 32px 0px 0 322px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__weather{
+    display: flex;
+    gap: 34px;
+}
+
+.header__weather .icons{
+    display: flex;
+    gap: 8px;
+}
+
+.weather__icon p{
+    color: #F1F1F1;
+    font-family: OpenSans-Light,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 9px;
+}
+
+h1{
+    color: #2194FF;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px; /* 98.438% */
+}
+
+.header__content h2{
+    color: #F1F1F1;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: relative;
+}
+
+.pointer{
+    position: absolute;
+    top: -2px;
+    right: 122px;
+}
+
+.header__btn{
+    color: #F1F1F1;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 40px;
+
+    border-radius: 11px;
+    border: 4px solid #2194FF;
+    width: 395px;
+    height: 87px;
+    background: rgb(26,118,204);
+    background: linear-gradient(98deg, rgba(26,118,204,1) 0%, rgba(66,164,255,1) 97%);
+    margin-bottom: 13px;
+}
+
+.btn__text{
+    color: #F1F1F1;
+    font-family: OpenSans-SemiBold,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main__container{
+    background: #2D3238;
+    padding: 46px 422px 44px 322px;
+
+}
+
+.container__content{
+    display: flex;
+    /*gap: 8px;*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__container__title{
+    color: #2194FF;
+    text-align: center;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 49px;
+}
+
+.main__container article h3{
+    color: #F1F1F1;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__container article h4{
+    color: #2194FF;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__content p{
+    color: #F1F1F1;
+    font-family: OpenSans-Light,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.container__content button{
+    color: #F1F1F1;
+    text-align: center;
+    font-family: OpenSans-SemiBold,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 155px;
+    height: 43px;
+    border-radius: 50px;
+    background: #2194FF;
+    border: 0;
+    margin-top: 12px;
+}
+
+.container__truck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__truck h4{
+    color: #F1F1F1;
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.percent__content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.percent__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.percent__content h5{
+    margin-bottom: 0;
+    color: rgba(241, 241, 241, 0.70);
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.percent__content h6{
+    color: rgba(241, 241, 241, 0.70);
+    font-family: RussoOne-Regular,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.percent__line{
+    width: 1px;
+    height: 51px;
+    background: rgba(241, 241, 241, 0.30);
+}
+
+.main__container{
+    position: relative;
+}
+
+.bottom__arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    /*gap: -20px;*/
+    position: absolute;
+    left: 50%;
+}
+
+.main__products{
+    padding-left: 322px;
+    padding-right: 422px;
+}
+
+
+
+.main__products__title{
+    color: #F1F1F1;
+    text-align: center;
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 87px;
+    margin-bottom: 25px;
+}
+
+
+.products__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__card{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 26px;
+}
+
+.products__card h3{
+    color: #2194FF;
+    text-align: center;
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products__card p{
+    color: #F1F1F1;
+    text-align: center;
+    font-family: "OpenSans-Light",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main__products__bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main__products__bottom h3{
+    color: #F1F1F1;
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.main__products__bottom button{
+    background: #2194FF;
+    height: 35px;
+    color: #F1F1F1;
+    font-family: "OpenSans-Regular",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: 0;
+}
+
+
+.main__tab{
+    padding-top: 34px;
+    padding-bottom: 64px;
+    padding-right: 389px;
+    padding-left: 290px;
+    background: rgba(33, 148, 255, 0.05)
+}
+
+.main__tab h2{
+    color: #2194FF;
+    text-align: center;
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-pills{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 35px;
+    margin-bottom: 37px;
+}
+
+.nav-pills .nav-link{
+    width: 164px;
+    height: 64px;
+    border-radius: 20px;
+    background: rgba(241, 241, 241, 0.20);
+    color: #F1F1F1;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tab-pane{
+    width: 596px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.tab-pane img{
+    width: 100%;
+    height: 100%;
+}
+
+.main__tab__btn{
+    color: #F1F1F1;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    font-family: "RussoOne-Regular",sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    fill: linear-gradient(180deg, #81C0FB -21.43%, #FFF 123.66%);
+    opacity: 0.31;
+
+    background: linear-gradient(rgba(129, 192, 251, 1),rgba(255, 255, 255, 1));
+    border-radius: 11px;
+    border: 4px solid #2194FF;
+    width: 395px;
+    height: 87px;
+    background: rgb(26,118,204);
+    background: linear-gradient(98deg, rgba(26,118,204,1) 0%, rgba(66,164,255,1) 97%);
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+/************Mobile Version********/
+@media (min-width: 0) and (max-width: 567px){
+
+    .navbar__brand a{
+        font-size: 12px;
+    }
+
+    .navbar__contact a:nth-child(1){
+        font-size: 18px;
+    }
+
+    .navbar__contact a:nth-child(2){
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 0;
+        padding: 20px 40px 0 20px;
+    }
+
+    .navbar__contact{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__content{
+        flex-direction: column;
+        padding: 0;
+        padding: 30px 0px 0 20px;
+    }
+
+    .header__btn{
+        width: 100%;
+    }
+
+    .header__truck{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .main__container{
+        padding: 0;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .container__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .truck__img{
+        width: 300px;
+    }
+
+    .truck__img img{
+        width: 100%;
+    }
+    .bottom__arrow{
+        display: none;
+    }
+
+    .main__products{
+        padding: 0 30px 0 30px;
+    }
+
+    .products__card{
+        width: 45%;
+    }
+
+    .products__card h3{
+        font-size: 20px;
+    }
+
+    .products__card p{
+        font-size: 12px;
+    }
+
+    .main__products__title{
+        margin-top: 40px;
+    }
+
+    .main__products__bottom h3{
+        font-size: 20px;
+    }
+    .main__products__bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .main__products__bottom button{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .main__products__bottom img{
+        width: 100%;
+    }
+
+
+}
+
+/***********Tablet Version************/
+@media (min-width: 567px) and (max-width: 992px){
+    .navbar{
+        padding: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .header__content{
+        flex-direction: column;
+        padding: 0;
+        padding: 30px 0px 0 50px;
+    }
+
+    .header__truck{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .main__container{
+        padding: 0;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .container__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .truck__img{
+        width: 300px;
+    }
+
+    .truck__img img{
+        width: 100%;
+    }
+
+    .bottom__arrow{
+        display: none;
+    }
+
+    .main__products{
+        padding: 0 30px 0 30px;
+    }
+
+
+
+    .products__card h3{
+        font-size: 20px;
+    }
+
+    .products__card p{
+        font-size: 12px;
+    }
+
+    .main__products__title{
+        margin-top: 40px;
+    }
+
+    .main__products__bottom h3{
+        font-size: 20px;
+    }
+
+
+    .main__products__bottom button{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .main__products__bottom img{
+        width: 100%;
+    }
+
+    .main__products__bottom button{
+        font-size: 12px;
+    }
+
+
+    .main__products__bottom button{
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+/**************Netbok Version************/
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .navbar{
+        padding: 0;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .header__content{
+        padding: 0;
+        padding: 90px 0px 0 90px;
+    }
+
+    .header__truck{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .main__container{
+        padding: 0;
+        padding: 90px 20px 20px 90px;
+    }
+
+    .main__products{
+        padding: 0 20px 0 20px;
+    }
+
+
+}
+
+/***********Notebook***********/
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .navbar{
+        padding: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .header__content{
+        padding: 0;
+        padding: 100px 0px 0 100px;
+    }
+
+    .main__container{
+        padding: 0;
+        padding: 100px 20px 20px 100px;
+    }
+
+    .main__products{
+        padding: 0 20px 0 20px;
+    }
+
+    .main__products__bottom button{
+        padding: 5px;
+    }
+}
